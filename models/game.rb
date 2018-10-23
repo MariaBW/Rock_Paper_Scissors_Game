@@ -10,22 +10,22 @@ class Game
     if @player1 == @player2
       return "draw"
 
-    elsif @player1 == rock && @player2 == paper
+    elsif @player1 == "rock" && @player2 == "paper"
       return @player2
 
-    elsif @player1 == paper && @player2 == rock
+    elsif @player1 == "paper" && @player2 == "rock"
       return @player1
 
-    elsif @player1 == paper && @player2 == scissors
+    elsif @player1 == "paper" && @player2 == "scissors"
       return @player2
 
-    elsif @player1 == scissors && @player2 == paper
+    elsif @player1 == "scissors" && @player2 == "paper"
       return @player1
 
-    elsif @player1 == rock && @player2 == scissors
+    elsif @player1 == "rock" && @player2 == "scissors"
       return @player1
 
-    elsif @player1 == scissors && @player2 == rock
+    elsif @player1 == "scissors" && @player2 == "rock"
       return @player2
 
 
@@ -33,4 +33,4 @@ class Game
 
   end
 
-end 
+end
